@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/Project1/resources/css/mystyles.css"/>
+</head>
+<body>
+
+	<div class="login-container" id = "nameWelcome">
+		<h4>Welcome Home</h4>
+	</div>
+	
+	<table id="myReimbTable" class="table">
+		<thead>
+			<tr>
+				<th scope="col">Reimb ID</th>
+				<th scope="col">Total Amount</th>
+				<th scope="col">Submitted</th>
+				<th scope="col">Resolved</th>
+				<th scope="col">Description</th>
+				<th scope="col">Receipt</th>
+				<th scope="col">Author</th>
+				<th scope="col">Resolver</th>
+				<th scope="col">Status</th>
+				<th scope="col">Reason</th>
+
+				
+			</tr>
+		</thead>
+		<tbody id="villTableBody">
+		
+		</tbody>
+	</table>
+	
+	
+	
+	<script type="text/JavaScript" src="/Project1/resources/js/manager.js"></script>
+	<button type="button" onclick="filterTheTable()" class = "btn btn-primary btn-block btn-large">Get only Pending Reimbursements!!</button>
+
+	<form method="post" action="/Project1/forwarding/logout">
+		<input type="submit" value="LogOut"/>
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
